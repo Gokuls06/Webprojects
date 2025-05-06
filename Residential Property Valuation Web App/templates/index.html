@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Residential Property Valuation</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>🏠 Residential Property Valuation</h1>
+
+    <div class="card">
+      <h2>📤 Upload Dataset</h2>
+      <input type="file" id="fileInput" accept=".csv">
+      <button onclick="uploadCSV()">Upload & Train</button>
+      <p id="uploadMessage" class="message"></p>
+    </div>
+
+    <div id="formArea" class="card hidden">
+      <h2>📈 Predict House Price</h2>
+      <label>Location:
+        <select id="locationSelect"></select>
+      </label>
+      <label>Rooms:
+        <input type="number" id="rooms" placeholder="e.g. 3">
+      </label>
+      <label>Square Footage:
+        <input type="number" id="sqft" placeholder="e.g. 1200">
+      </label>
+      <button onclick="predictPrice()">Predict Price</button>
+      <div id="priceResult" class="message"></div>
+      
+    </div>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background: url('/static/img/house.jpg') no-repeat center center fixed;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #d8e3ef;
+  }
+  
+  .card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .card h2 {
+    margin-top: 0;
+    color: #3498db;
+  }
+  
+  label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: #2980b9;
+    color: white;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #1abc9c;
+  }
+  
+  .message {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #2c3e50;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .viz {
+    margin-top: 20px;
+  }
+  
